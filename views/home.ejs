@@ -2,5 +2,9 @@
 <h1>Hello</h1>
 
 <p><%= startingContent %></p>
-    <% console.log(composeData); %>
+
+   <% posts.forEach(function(post){ %>
+     <h1><%= post.title %></h1>
+     <p><%= post.content %></p>
+  <% });%>
 <%- include("partials/footer"); -%>
